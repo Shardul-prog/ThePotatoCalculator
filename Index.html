@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBestCalculator</title>
+    <link rel="stylesheet"space href ="TheBestCalculator.css">
+    
+  
+    
+  </head>
+
+  <body>
+
+    <div id ="h1div">
+       <h1>Welcome to The Best Calculator Website</h1>
+    </div>
+    <div id ="div1">
+      <h2> First Number</h2>
+      <input type="number" id="input1" class="form-control" />
+      <h2>Second Number</h2>
+      <input type="number" id="input2" class="form-control"  />
+
+    <div id = "div3">
+      <p>       </p>
+     
+
+    </div>  
+
+    <div id = "div2">  
+      <button onclick="addition()">Add</button>
+      <button onclick="subtraction()">Subtract</button>
+      <button onclick="multiplication()">Multiply</button>
+      <button onclick="division()">Divide</button>
+    </div>
+      
+      <p id ="result">
+      
+      </p>
+    </div>
+
+    <script id="functions">
+      function addition() {
+        var num1 = document.getElementById("input1").value
+        var num2 = document.getElementById("input2").value
+        var num3 = Number(num1) + Number(num2)
+        document.getElementById("result").innerHTML = num3
+      }
+
+      function subtraction() {
+        var num1 = document.getElementById("input1").value
+        var num2 = document.getElementById("input2").value
+        var num3 = Number(num1) - Number(num2)
+        document.getElementById("result").innerHTML = num3
+      }
+
+      function multiplication() {
+        var num1 = document.getElementById("input1").value
+        var num2 = document.getElementById("input2").value
+        var num3 = Number(num1) * Number(num2)
+        document.getElementById("result").innerHTML = num3
+      }
+
+      function division() {
+        var num1 = document.getElementById("input1").value
+        var num2 = document.getElementById("input2").value
+        var num3 = Number(num1) / Number(num2)
+        document.getElementById("result").innerHTML = num3
+      }
+
+    </script>
+
+
+  </body>
+
+</html>
